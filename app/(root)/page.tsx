@@ -1,11 +1,24 @@
+import { Search } from "lucide-react";
+import SearchFrom from "../components/search";
 
 
 export default function Home() {
   return (
     <>
-    <h1 className="text-2xl">
-      home
-    </h1>
+    <section className="pink_container">
+      <h1 className="heading">
+             Vibe
+          </h1>
+          <p className="sub_heading !max-w-3xl text-white">
+              news
+            </p>
+            <Search/>
+            <SearchFrom/>
+    </section>
+
+    
     </>
   );
 }
+
+
