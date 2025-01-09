@@ -1,5 +1,5 @@
 import React from "react"
-import Navabr from "../components/navbar"
+import Navabr from "../../components/navbar"
 
 const Layout=({children}:Readonly<{children:React.ReactNode}>)=>{
 return(
