@@ -14,7 +14,7 @@ const config: Config = {
     			xs: '475px'
     		},
     		colors: {
-    			primary: {
+    			primary: { 
     				'100': '#FFE8F0',
     				DEFAULT: 'hsl(var(--primary))',
     				foreground: 'hsl(var(--primary-foreground))'
