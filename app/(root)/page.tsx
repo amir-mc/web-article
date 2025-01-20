@@ -1,7 +1,8 @@
 import { Search } from "lucide-react";
 import SearchFrom from "../../components/search";
 import Sturtup from "@/components/startupfile";
-
+import { START_QUERY } from "@/sanity/lib/query";
+import { client } from "@/sanity/lib/client";
 
 
 export default async function Home({searchParams}:{
@@ -9,16 +10,7 @@ export default async function Home({searchParams}:{
 }) 
 
 { 
-  const posts=[{
-    _createAt:new Date(),
-    view:21,
-    author:{_id:1,name:'Amir'},
-    _id:1,
-    descroption:'this is a test descroption of this post',
-    category:'Investing',
-    imge:"https://www.builderspace.com/wp-content/uploads/2022/05/modern-buildings-1568x1045.jpg",
-    title:"Building "
-  }]
+  const posts= await client.fetch(START_QUERY)
 const query=(await searchParams).query
   return (
     <>
