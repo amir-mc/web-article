@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 
 const Sturtup=({post}:{post:startupcard})=>{
-const {_createAt,view,imge,author,descroption,_id,category,title}=post
+const {_createAt,view,image,author,descroption,_id,category,title}=post
     return(
         <>
         <li className="startup-card group">
@@ -42,7 +42,7 @@ const {_createAt,view,imge,author,descroption,_id,category,title}=post
                 <p className="startup-card_desc">
                 {descroption}
                 </p>
-                <Image width={200} height={200} src={imge} alt="placeholder" className="startup-card_img"/>
+                <Image width={200} height={200} src={image} alt="placeholder" className="startup-card_img"/>
              </Link>
                 <div className="flex-between gap-3 mt-5">
                         <Link href={`/?query=${category.toLowerCase()}`}>
