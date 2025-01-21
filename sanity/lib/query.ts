@@ -9,7 +9,7 @@ export const START_QUERY= defineQuery(`*[_type=="startup" && defined(slug.curren
    author->{_id,name,bio,image},
    category,
    description,
-   _creatAt
-  
+_createdAt,
+   pitch
 }
 `)
