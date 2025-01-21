@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///root/article-1/components/searchreset.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { X } from \"lucide-react\";\r\nimport Link from \"next/link\";\r\n\r\n\r\n\r\nconst Resetform=()=>{\r\n    const reset=()=>{\r\n        const form=document.querySelector('.search-form')as\r\n        HTMLFormElement;\r\n        if(form) form.reset()\r\n\r\n    }\r\n    return(\r\n        <button type='reset' onClick={reset}>\r\n            <Link href={'/'} className=\"search-btn text-white\">\r\n                <X />\r\n            </Link>\r\n        </button> \r\n    )\r\n}\r\nexport default Resetform"],"names":[],"mappings":";;;;AAGA;AADA;AAFA;;;;AAOA,MAAM,YAAU;IACZ,MAAM,QAAM;QACR,MAAM,OAAK,SAAS,aAAa,CAAC;QAElC,IAAG,MAAM,KAAK,KAAK;IAEvB;IACA,qBACI,8OAAC;QAAO,MAAK;QAAQ,SAAS;kBAC1B,cAAA,8OAAC,4JAAA,CAAA,UAAI;YAAC,MAAM;YAAK,WAAU;sBACvB,cAAA,8OAAC,4LAAA,CAAA,IAAC;;;;;;;;;;;;;;;AAIlB;uCACe"}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

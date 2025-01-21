@@ -10,7 +10,7 @@ const Navabr=async()=>{
         <header className="px-4 py-4 bg-white shadow-sm font-work-sans">
             <nav className="flex justify-between  items-center">
                 <Link href='/'>
-                <img  src='/logo.jpg' width={80} height={120} />
+                <img  src='/logo.JPG' width={80} height={120} />
                 </Link>
                 <div className="flex justify-center gap-5 text-black ">
                 { 
