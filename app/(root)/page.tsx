@@ -1,6 +1,6 @@
 import { Search } from "lucide-react";
 import SearchFrom from "../../components/search";
-import Sturtup from "@/components/startupfile";
+import Sturtup, { Startupcard } from "@/components/startupfile";
 import { START_QUERY } from "@/sanity/lib/query";
 import { client } from "@/sanity/lib/client";
 
@@ -33,7 +33,7 @@ const query=(await searchParams).query
       <ul className="mt-7 card_grid">
           {
             posts.length>0?(
-              posts.map((post:startupcard)=>(
+              posts.map((post:Startupcard)=>(
               <Sturtup key={post?._id} post={post}/>
               ))
             ):(
