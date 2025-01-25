@@ -114,7 +114,7 @@ export type SanityImageMetadata = {
 export type Geopoint = {
   _type: "geopoint";
   lat?: number;
-  lng?: number;
+  lng?: number; 
   alt?: number;
 };
 
