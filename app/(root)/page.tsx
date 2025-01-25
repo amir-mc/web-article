@@ -4,15 +4,15 @@ import Sturtup, { Startupcard } from "@/components/startupfile";
 import { START_QUERY } from "@/sanity/lib/query";
 import { client } from "@/sanity/lib/client";
 
-
+ 
 
 export default async function Home({searchParams}:{
-  searchParams:Promise<{query?:string}>
-}) 
-
-{ 
+  searchParams:Promise<{query?:string}>   
+})  
+ 
+{  
   const posts= await client.fetch(START_QUERY)
-
+ 
 const query=(await searchParams).query
   return (
     <>

@@ -115,14 +115,14 @@ export type Geopoint = {
   _type: "geopoint";
   lat?: number;
   lng?: number;  
-  alt?: number;
+  alt?: number; 
 }; 
  
-export type SanityAssetSourceData = {
+export type SanityAssetSourceData =  {
   _type: "sanity.assetSourceData";
-  name?: string;
-  id?: string;
-  url?: string;
+  name?: string; 
+  id?: string; 
+  url?: string; 
 };
  
 export type Startup = {

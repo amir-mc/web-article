@@ -3,7 +3,7 @@ import Resetform from './searchreset';
 import { Search } from "lucide-react";
 const SearchFrom=({query}:{query?:string})=>{
 
-
+const javad=100
     return(
 
         <Form action="/" scroll={false} className='search-form'>
